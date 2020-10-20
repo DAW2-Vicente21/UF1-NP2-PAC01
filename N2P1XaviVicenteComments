@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>N1 P1</title>
+</head>
+<body>
+	<ol>
+        <li>The use of $_GET</li>
+        <li>The use of $_POST </li>
+        <li>The use of $_SESSION</li>
+        <li>The use of setcookie()</li>
+        <li>Using constants and variables</li>
+        <li>Passing variables between pages</li>
+        <li>Using else/if arguments</li>
+        <li>Comparision operators</li>
+        <li>The importance of coding practice</li>
+        <li>Integrating HTML with PHP</li>
+    </ol>
+
+    <p> Document: 10 </p>
+    <p> Explanation: 10 </p>
+    <p> Student mark: 10 </p>
+    <p> Improvement: I wouldn't make any improvement, it was perfect! </p>
+
+
+</body>
+</html>
