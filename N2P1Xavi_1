@@ -1,0 +1,59 @@
+<?php
+    session_start();
+
+    if($_SESSION['authuser'] != 1){
+        echo "Sorry, but you don't have permission to view this page!";
+        exit();
+    }
+
+?>
+
+<html>
+<head>
+    <title>Variables</title>
+</head>
+<body>
+    <?php
+
+        echo "Welcome to our site, ";
+        echo $_COOKIE["username"];
+        echo "! </br>";
+
+        echo "My favorite food is: ";
+        echo $_GET['favfood'];
+        echo "</br>";
+
+        echo "Hi! ";
+        echo $_POST["Nombre"] = 'Xavi';
+        echo " ";
+        echo $_POST["Apellido"] = 'Vicente';
+        echo ". You are ";
+        echo $_POST["Edad"] = '23';
+        echo " years old!";
+        echo "</br>";
+
+        $user_name = isset($_GET['username']) ? $_GET['username'] : 'nadie';
+
+        echo $user_name;
+        echo "</br>";
+
+        
+
+        date_default_timezone_set('America/New_York');
+        $month = date('n');
+        if ($month == 1) {echo '31';}
+        if ($month == 2) {echo '28 (unless it\'s a leap year';}
+        if ($month == 3) {echo '31';}
+        if ($month == 4) {echo '30';}
+        if ($month == 5) {echo '31';}
+        if ($month == 6) {echo '30';}
+        if ($month == 7) {echo '31';}
+        if ($month == 8) {echo '31';}
+        if ($month == 9) {echo '30';}
+        if ($month == 10) {echo '31';}
+        if ($month == 11) {echo '30';}
+        if ($month == 12) {echo '31';}
+    ?>
+</body>
+</html>
+
