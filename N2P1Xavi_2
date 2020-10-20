@@ -1,0 +1,20 @@
+<?php
+session_start();
+setcookie("username","Xavi",time()+60);
+$_SESSION['password'] = '1234';
+$_SESSION['authuser'] = '1';
+?>
+<html>
+<head>
+    <title>Variables</title>
+</head>
+<body>
+    <?php
+        $myfavfood = urlencode("Rice");
+        echo "<a href='N2P2XaviVicente.php?favfood=$myfavfood'>";
+        echo "Click here to see my favorite food!";
+        echo "</a>";
+
+    ?>
+</body>
+</html>
